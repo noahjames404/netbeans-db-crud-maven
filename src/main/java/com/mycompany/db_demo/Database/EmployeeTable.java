@@ -53,4 +53,13 @@ public class EmployeeTable extends CRUD {
             ex.printStackTrace();
         }
     }
+    
+    public void deleteEmployee(int id){
+        try {
+            Statement stmt = conn.createStatement();
+            stmt.executeUpdate("DELETE FROM employee WHERE id='"+id+"'");
+        }catch(Exception ex){
+            ex.printStackTrace();
+        }
+    }
 }

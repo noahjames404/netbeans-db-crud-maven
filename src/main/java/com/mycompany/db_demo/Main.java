@@ -18,20 +18,8 @@ public class Main {
     public static void main(String [] ara){
         
         EmployeeTable table = new EmployeeTable();
-        
-//        table.addEmployee(new EmployeeModel(
-//                1,
-//                "bob",
-//                "martinez"
-//        ));
 
-        table.updateEmployee(new EmployeeModel(
-                3,
-                1,
-                "aaron",
-                "john"
-        ));
-        
+
         for(EmployeeModel data : table.getEmployeeList()){
             pln(data.getFirst_name());
             pln(data.getLast_name());
